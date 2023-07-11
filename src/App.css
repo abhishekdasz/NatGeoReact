@@ -1,38 +1,325 @@
-.App {
-  text-align: center;
+* 
+{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page-sec
+{
+  height: 500px;
+  width: 280px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.img-container 
+{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.imgs 
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.slider
+{
+  height: 100vh;
+  position: relative;
+
+  .left 
+  {
+    position: absolute;
+    left: 0;
+    color: red;
+    font-size: 3rem;
+  }
+
+  .right 
+  {
+    position: absolute;
+    right: 0;
+    color: red;
+    font-size: 3rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slide 
+{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: background-image 0.5s ease-in;
+}
+
+.slide p 
+{
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    width: 385px;
+}
+
+
+.navbar
+{
+  position: absolute;
+  color: #fff;
+  width: 100%;
+
+  .nav-sec
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .logo-container
+    {
+      position: absolute;
+      top: 20px;
+      left: 60px;
+      width: 175px;
+
+      .logo
+      {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .nav-container
+    {
+      .nav-menu 
+      {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 20px;
+
+        .list
+        {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.container 
+{
+  height: 100vh;
+  width: 100%;
+  background: #000000;
+  position: absolute;
+}
+
+.section-2
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 13px;
+}
+.head-1
+{
+  color: #fff;
+}
+.rect
+{
+  width: 64px;
+  height: 24px;
+  background: #FFCD05;
+  position: absolute;
+  left: 0px;
+  top: 77px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.stories {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  padding: 0 20px;
+}
+
+.rectangle1,
+.rectangle2 {
+  width: 11px;
+  height: 39px;
+  left: 474px;
+  top: 88px;
+  background: #FFCD05;
+}
+
+.side-bar 
+{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 22px;
+  margin-left: 50px;
+}
+
+.rectangle-3 
+{
+  width: 434px;
+  height: 100px;
+  background: #141414;
+  border-radius: 15px;
+  color: #fff;
+
+  display: flex;
+  padding: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-img img {
+  width: 95px;
+  height: 95px;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sidebar-content h1 {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 0 15px;
+}
+
+.sidebar-content p {
+  font-size: 20px;
+}
+
+.content-heading {
+  display: flex;
+  margin-left: 65px;
+  margin-bottom: 15px;
+}
+
+.rec-1,
+.rec-2 {
+  width: 10px;
+  background: #FFCD05;
+}
+
+.right-bar
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.right-bar img
+{
+  width: 546px;
+  height: 254px;
+  border-radius: 15px;
+}
+.sec-2
+{
+  display: flex;
+  gap: 25px;
+}
+.sub-sec1 img
+{
+  width: 272px;
+  height: 334px;
+}
+.sub-sec2 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sub-sec2 img
+{
+  width: 248px;
+  height: 156px;
+}
+
+@media screen and (max-width:768px) 
+{
+  .nav-container
+  {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container
+  {
+    height: auto;
+  }
+
+  .slide p 
+  {
+    width: 330px;
+    font-size: 50px;
+    left: 30px;
+    bottom: 100px;
+  }
+
+
+  .section-2
+  {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .rect
+  {
+    display: none;
+  }
+  .rectangle-3 
+  {
+    width: 282px;
+    height: 100px;
+  }
+  .content-heading
+  {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  .side-bar
+  {
+    margin-left: 0;
+    align-items: center;
+  }
+  .sidebar-content h1 
+  {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+  .sidebar-content p 
+  {
+    font-size: 14px;
+  }
+
+  .right-bar img 
+  {
+    width: 326px;
+    height: auto;
+  }
+  .sub-sec1 img
+  {
+    width: 165px;
+    height: auto;
+  }
+  .sub-sec2 img
+  {
+    width: 135px;
+    height: auto;
   }
 }
