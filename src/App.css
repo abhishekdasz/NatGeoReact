@@ -78,15 +78,10 @@
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     .logo-container
     {
-      position: absolute;
-      top: 15px;
-      left: 60px;
-      width: 175px;
-
       .logo
       {
         width: 100%;
